@@ -7,9 +7,11 @@ import {
 } from "react-native";
 import { Text, View } from "../../components/Themed";
 import Lottie from "lottie-react-native";
-import { useContext, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+import { threadsListData } from "../../data";
+import ThreadsList from "../../components/home/threadslist/ThreadsList";
 
-export default function TabOneScreen() {
+export default function HomeScreen() {
   const animationRef = useRef<Lottie>(null);
   // const threads = useContext(ThreadContext);
 
@@ -45,6 +47,12 @@ export default function TabOneScreen() {
           loop={false}
           onAnimationFinish={() => animationRef.current?.pause()}
         />
+
+        <View>
+          {threadsListData.map((threads) => (
+            <ThreadsList threads={threads} key={threads.id}/>
+          ))}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
