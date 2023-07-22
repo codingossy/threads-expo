@@ -1,208 +1,402 @@
-import { ThreadsData} from "./types-ts";
+import { Threads } from "./types-ts";
 
-export const threadsListData: ThreadsData[] = [
+export const threadsListData: Threads[] = [
+  {
+    id: 1,
+    verified: false, // Add appropriate verification status for Threads
+    name: "Emili Jones", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "emili_33",
+    thread: [
       {
-        "id": 1,
-        "username": "biliki2454",
-        "name": "Biliki su",
-        "bio": "Hello, im biliki su, new to threads app",
-        "avatar": "https://images.pexels.com/photos/17267141/pexels-photo-17267141/free-photo-of-woman-posing-in-floral-dress.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
-        "followers": 100,
-        "following": 50,
-        "verified": true,
-        "threads": [
+        id: 201,
+        userId: 2,
+        text: "Just had a delicious lunch! 🍕 just had the best amala ever at surulere",
+        timestamp: "2023-07-21T15:45:20Z",
+        // images: "https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
           {
-            "id": 101,
-            "userId": 1,
-            "text": "Just had a great time at the park!",
-            "timestamp": "2023-07-22T10:15:30Z",
-            "images": "https://images.pexels.com/photos/17267141/pexels-photo-17267141/free-photo-of-woman-posing-in-floral-dress.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
-            "replies": [
-              {
-                "id": 1001,
-                "userId": 2,
-                "text": "Glad to hear that! 🌳",
-                "timestamp": "2023-07-22T10:20:45Z"
-              }
-            ]
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
           },
-          {
-            "id": 102,
-            "userId": 1,
-            "text": "Excited to start working on my Twitter clone project!",
-            "timestamp": "2023-07-22T12:30:45Z",
-            "replies": []
-          }
-        ]
+        ],
       },
+    ],
+  },
+  {
+    id: 2,
+    verified:  true, // Add appropriate verification status for Threads
+    name: "Micak Jones", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "mkiajk899_33",
+    thread: [
       {
-        "id": 2,
-        "username": "emili_33",
-        "name": "Emili Jones",
-        "bio": "Hey there! I love coding and technology.",
-        "avatar": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "followers": 90,
-        "following": 200,
-        "verified": false,
-        "threads": [
+        id: 201,
+        userId: 2,
+        text: "hello everyone, who dey house. you people should show face now",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
           {
-            "id": 201,
-            "userId": 2,
-            "text": "Just had a delicious lunch! 🍕",
-            "timestamp": "2023-07-21T15:45:20Z",
-            "replies": []
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
           },
-          {
-            "id": 202,
-            "userId": 2,
-            "text": "Working on a cool web development project.",
-            "timestamp": "2023-07-21T18:20:10Z",
-            "replies": [
-              {
-                "id": 1002,
-                "userId": 1,
-                "text": "Sounds interesting! What's it about?",
-                "timestamp": "2023-07-21T18:30:50Z"
-              }
-            ]
-          }
-        ]
+        ],
       },
+    ],
+  },
+  {
+    id: 3,
+    verified: false, // Add appropriate verification status for Threads
+    name: "sarah oh", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "sarah_0004",
+    thread: [
       {
-        "id": 3,
-        "username": "Bilal22",
-        "name": "Bilal Chukwu",
-        "bio": "Hello, there, looking for baddies outchea",
-        "followers": 100,
-        "avatar": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "following": 50,
-        "verified": true,
-        "threads": [
+        id: 201,
+        userId: 2,
+        text: "i dont like you people here, especially the short lagos men",
+        timestamp: "2023-07-21T15:45:20Z",
+        // images: "https://images.pexels.com/photos/447329/pexels-photo-447329.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
           {
-            "id": 101,
-            "userId": 1,
-            "text": "Just had a great time at the park!",
-            "timestamp": "2023-07-22T10:15:30Z",
-            "images": ["image1.jpg"],
-            "replies": [
-              {
-                "id": 1001,
-                "userId": 2,
-                "text": "Glad to hear that! 🌳",
-                "timestamp": "2023-07-22T10:20:45Z"
-              }
-            ]
+            id: 2,
+            user: "janet",
+            text: "we no like yout papa too",
+            timestamp: "2023-07-21T18:30:50Z",
           },
           {
-            "id": 102,
-            "userId": 1,
-            "text": "Excited to start working on my Twitter clone project!",
-            "timestamp": "2023-07-22T12:30:45Z",
-            "replies": []
-          }
-        ]
+            id: 24,
+            user: "janet",
+            text: "we no like yout papa too",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 24,
+            user: "janet",
+            text: "we no like yout papa too",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
       },
+    ],
+  },
+  {
+    id: 4,
+    verified: true, // Add appropriate verification status for Threads
+    name: "bilal oshodi", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "bilal_33",
+    thread: [
       {
-        "id": 4,
-        "username": "sandra_oh",
-        "name": "Sandra oh",
-        "bio": "Hey there! I love coding and technology.",
-        "followers": 90,
-        "following": 200,
-        "avatar": "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "verified": false,
-        "threads": [
+        id: 201,
+        userId: 2,
+        text: "where the baddies here at, lets do this weekend on me and my boys",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
           {
-            "id": 201,
-            "userId": 2,
-            "text": "Just had a delicious lunch! 🍕",
-            "timestamp": "2023-07-21T15:45:20Z",
-            "replies": []
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
           },
           {
-            "id": 202,
-            "userId": 2,
-            "text": "Working on a cool web development project.",
-            "timestamp": "2023-07-21T18:20:10Z",
-            "replies": [
-              {
-                "id": 1002,
-                "userId": 1,
-                "text": "Sounds interesting! What's it about?",
-                "timestamp": "2023-07-21T18:30:50Z"
-              }
-            ]
-          }
-        ]
+            id: 3,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
       },
+    ],
+  },
+  {
+    id: 5,
+    verified: false, // Add appropriate verification status for Threads
+    name: "bisola", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "ts-bisola",
+    thread: [
       {
-        "id": 5,
-        "username": "jacob_vh",
-        "name": "Jacob Vh",
-        "bio": "Hello, there, new to this app",
-        "avatar": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "followers": 100,
-        "following": 50,
-        "verified": true,
-        "threads": [
+        id: 201,
+        userId: 2,
+        text: "lloking good today guys 🍕",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
           {
-            "id": 101,
-            "userId": 1,
-            "text": "Just had a great time at the park!",
-            "timestamp": "2023-07-22T10:15:30Z",
-            "images": ["image1.jpg"],
-            "replies": [
-              {
-                "id": 1001,
-                "userId": 2,
-                "text": "Glad to hear that! 🌳",
-                "timestamp": "2023-07-22T10:20:45Z"
-              }
-            ]
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
           },
           {
-            "id": 102,
-            "userId": 1,
-            "text": "Excited to start working on my Twitter clone project!",
-            "timestamp": "2023-07-22T12:30:45Z",
-            "replies": []
-          }
-        ]
+            id: 25,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 23,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
       },
+    ],
+  },
+  {
+    id: 6,
+    verified: true, // Add appropriate verification status for Threads
+    name: "ada", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "adaada_444",
+    thread: [
       {
-        "id": 6,
-        "username": "linda_2",
-        "name": "Linda streets",
-        "bio": "Hey there! I love coding and technology.",
-        "avatar": "https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "followers": 90,
-        "following": 200,
-        "verified": false,
-        "threads": [
+        id: 201,
+        userId: 2,
+        text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas eligendi eius officia, possimus minus quaerat laboriosam nesciunt expedita assumenda!",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
           {
-            "id": 201,
-            "userId": 2,
-            "text": "Just had a delicious lunch! 🍕",
-            "timestamp": "2023-07-21T15:45:20Z",
-            "replies": []
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
           },
           {
-            "id": 202,
-            "userId": 2,
-            "text": "Working on a cool web development project.",
-            "timestamp": "2023-07-21T18:20:10Z",
-            "replies": [
-              {
-                "id": 1002,
-                "userId": 1,
-                "text": "Sounds interesting! What's it about?",
-                "timestamp": "2023-07-21T18:30:50Z"
-              }
-            ]
-          }
-        ]
-      }
-    ]
- 
-  
-  
+            id: 42,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 24,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 233,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 1,
+    verified: false, // Add appropriate verification status for Threads
+    name: "Emili Jones", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "emili_33",
+    thread: [
+      {
+        id: 201,
+        userId: 2,
+        text: "Just had a delicious lunch! 🍕 just had the best amala ever at surulere",
+        timestamp: "2023-07-21T15:45:20Z",
+        // images: "https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
+          {
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    verified:  true, // Add appropriate verification status for Threads
+    name: "Micak Jones", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "mkiajk899_33",
+    thread: [
+      {
+        id: 201,
+        userId: 2,
+        text: "hello everyone, who dey house. you people should show face now",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
+          {
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    verified: false, // Add appropriate verification status for Threads
+    name: "sarah oh", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "sarah_0004",
+    thread: [
+      {
+        id: 201,
+        userId: 2,
+        text: "i dont like you people here, especially the short lagos men",
+        timestamp: "2023-07-21T15:45:20Z",
+        // images: "https://images.pexels.com/photos/447329/pexels-photo-447329.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
+          {
+            id: 2,
+            user: "janet",
+            text: "we no like yout papa too",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 24,
+            user: "janet",
+            text: "we no like yout papa too",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 24,
+            user: "janet",
+            text: "we no like yout papa too",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    verified: true, // Add appropriate verification status for Threads
+    name: "bilal oshodi", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "bilal_33",
+    thread: [
+      {
+        id: 201,
+        userId: 2,
+        text: "where the baddies here at, lets do this weekend on me and my boys",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
+          {
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 3,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    verified: false, // Add appropriate verification status for Threads
+    name: "bisola", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "ts-bisola",
+    thread: [
+      {
+        id: 201,
+        userId: 2,
+        text: "lloking good today guys 🍕",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
+          {
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 25,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 23,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 6,
+    verified: true, // Add appropriate verification status for Threads
+    name: "ada", // Add appropriate name for Threads
+    avatar:
+      "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=800",
+    username: "adaada_444",
+    thread: [
+      {
+        id: 201,
+        userId: 2,
+        text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas eligendi eius officia, possimus minus quaerat laboriosam nesciunt expedita assumenda!",
+        timestamp: "2023-07-21T15:45:20Z",
+        images: "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=800", // Add appropriate image URL (optional)
+        replies: [
+          {
+            id: 2,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 42,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 24,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+          {
+            id: 233,
+            user: "janet",
+            text: "nobi lie boss",
+            timestamp: "2023-07-21T18:30:50Z",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+

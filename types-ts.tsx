@@ -1,32 +1,26 @@
-export interface Reply {
+export interface Threads {
+    id?: number;
+    avatar: string;
+    username: string;
+    verified: boolean;
+    name: string;
+    images?: string; // New field for storing Threads images (optional).
+    thread: Thread[];
+  }
+  
+  export interface Thread {
     id: number;
     userId: number;
     text: string;
     timestamp: string;
+    images?: string; // New field for storing thread images (optional).
+    replies: Reply[];
   }
   
-  export interface Threads {
-    id?: number;
-    userId: number; // Add this property to match the data structure
+  export interface Reply {
+    id: number;
+    user: string;
     text: string;
     timestamp: string;
-    replies: Reply[];
-    images?: string; // New field for storing Threads images (optional).
-  }
-  
-  export interface User {
-    id: number;
-    username: string;
-    name: string;
-    bio: string;
-    followers: number;
-    following: number;
-    verified: boolean; // New field for storing user verification status.
-    threads: Threads[]; // Change 'Threadss' to 'threads'
-  }
-  
-  export interface ThreadsData {
-    users: User[];
-    threads: Threads[];
   }
   

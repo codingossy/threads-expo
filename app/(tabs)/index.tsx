@@ -20,11 +20,12 @@ export default function HomeScreen() {
   }, []);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView className=" flex-1 ">
       <ScrollView
+      showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           paddingTop: Platform.select({ android: 20 }),
-          paddingHorizontal: 10,
+          
         }}
         // ios only
         refreshControl={
@@ -48,9 +49,9 @@ export default function HomeScreen() {
           onAnimationFinish={() => animationRef.current?.pause()}
         />
 
-        <View>
+        <View className="">
           {threadsListData.map((threads) => (
-            <ThreadsList threads={threads} key={threads.id}/>
+            <ThreadsList threads={threads} key={threads.id} />
           ))}
         </View>
       </ScrollView>
